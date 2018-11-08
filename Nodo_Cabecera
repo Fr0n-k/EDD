@@ -1,0 +1,36 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Server;
+
+/**
+ *
+ * @author fcarv
+ */
+public class NodoCabecera {
+
+    String Nombre;
+    String Descripcion;
+    double Ponderacion;
+    String Fecha_Entrega;
+    String Tipo;
+    int idx;
+    NodoCabecera Siguiente;
+    NodoCabecera Anterior;
+    NodoNota Acceso;
+
+    public NodoCabecera(String Nombre, String Descripcion, double Ponderacion, String Fecha_Entrega, String Tipo) {
+        this.Nombre = Nombre;
+        this.Descripcion = Descripcion;
+        this.Ponderacion = Ponderacion;
+        this.Fecha_Entrega = Fecha_Entrega;
+        this.Tipo = Tipo;
+        this.idx = 0;
+        this.Siguiente = null;
+        this.Anterior = null;
+        this.Acceso = null;
+    }
+    
+}
